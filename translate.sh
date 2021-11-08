@@ -16,14 +16,14 @@ if [[ " ${translateLanguages[*]} " == *"$2"* ]];
 then
     echo "$2 is supported by AWS Translate!"
 else
-    echo "AWS Translate does not currently support $2. The following language codes are currently supported: echo ${translateLanguages[*]}"
+    echo "AWS Translate does not currently support $2. The following language codes are currently supported: ${translateLanguages[*]}"
 fi
 
 if [[ " ${translateLanguages[*]} " == *"$3"* ]];
 then
     echo "$3 is supported by AWS Translate!"
 else
-    echo "AWS Translate does not currently support $3. The following language codes are currently supported: echo ${translateLanguages[*]}"
+    echo "AWS Translate does not currently support $3. The following language codes are currently supported: ${translateLanguages[*]}"
 fi
 
 aws translate translate-text \
